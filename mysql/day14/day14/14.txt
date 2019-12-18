@@ -1,0 +1,76 @@
+前情回顾
+
+1. alter
+   alter table  [tb] [add/drop/modify/change/rename]
+
+2. 时间类型
+   date
+   datetime
+   time
+   year
+   timestamp
+
+   now()       default now()
+   curdate()
+   curtime()
+
+   [time] +/- interval [时间间隔]
+
+3. 高级查询语句
+
+   模糊 ：  like   %  _
+   正则 ：  regexp
+   as  ：  给表或者字段起别名
+   排序 ： order by    asc/desc
+   限制 ： limit
+   联合查询:  union  [all/distinct]
+   子查询： from 后 ，   where子句中
+
+5. 聚合
+
+   * select 语句执行顺序
+
+   聚合函数： avg() max() min() sum() count()
+   分组： group by [col]
+   聚合筛选: having
+   去重： distinct
+   聚合运算
+
+6. 索引操作
+
+   优点： 提高查询效率
+   缺点： 额外占空间，降低写效率
+
+   创建索引情况： 数据量大，频繁查询而不是修改
+
+   分类： primary key
+         index
+         unique
+
+   查看索引： desc   (key --> MUL UNI PRI)
+            show index from [tb]
+
+   创建 ：  create table [tb] (col type..,index index_name(col))
+           create index [index_name] on tb(col);
+
+   删除 ：  drop index [index_name] on [tb]
+
+作业： 对book表进行重组
+      分为  书籍表  作者表 和出版社表
+      1. 通过ER模型规划三个表的内容和关系
+      2. 设计三者之间的关系
+      3. 根据你的设计创建三个表完善表关系
+
+      熟悉语句
+
+
+
+
+
+
+
+
+
+
+
+
